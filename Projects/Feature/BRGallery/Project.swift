@@ -1,18 +1,18 @@
 import ProjectDescription
 
 let project = Project(
-    name: "BrienzFoundation",
+    name: "BRGallery",
     targets: [
         .target(
-            name: "BrienzFoundation",
+            name: "BRGallery",
             destinations: [.iPhone, .iPad, .mac],
             product: .staticFramework,
-            bundleId: "com.statios.BrienzFoundation",
+            bundleId: "com.statios.BRGallery",
             sources: ["Sources/**"],
             dependencies: [
                 TargetDependency.project(
-                    target: "DesignSystem",
-                    path: .relativeToRoot("Projects/Module/DesignSystem")
+                    target: "BRFoundation",
+                    path: .relativeToRoot("Projects/Foundation/BRFoundation")
                 )
             ]
         )

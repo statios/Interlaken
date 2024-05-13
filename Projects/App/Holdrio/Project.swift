@@ -1,13 +1,13 @@
 import ProjectDescription
 
 let project = Project(
-    name: "Brienz",
+    name: "Holdrio",
     targets: [
         .target(
-            name: "Brienz",
+            name: "Holdrio",
             destinations: [.iPhone, .iPad, .mac],
             product: .app,
-            bundleId: "com.statios.Brienz",
+            bundleId: "com.statios.Holdrio",
             infoPlist: .extendingDefault(
                 with: [
                     "UILaunchScreen": .dictionary([:]),
@@ -20,8 +20,8 @@ let project = Project(
             resources: ["Resources/**"],
             dependencies: [
                 TargetDependency.project(
-                    target: "BRGallery",
-                    path: .relativeToRoot("Projects/Feature/BRGallery")
+                    target: "HRGallery",
+                    path: .relativeToRoot("Projects/Feature/HRGallery")
                 )
             ],
             environmentVariables: [

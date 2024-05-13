@@ -1,5 +1,5 @@
 //
-//  BrienzApp.swift
+//  HoldrioApp.swift
 //  Brienz
 //
 //  Created by stat on 5/13/24.
@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct BrienzApp: App {
+struct HoldrioApp: App {
     var body: some Scene {
         WindowGroup {
-            MainTabView()
+            Text("hello world")
         }
     }
 }
