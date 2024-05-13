@@ -8,7 +8,10 @@ let project = Project(
             destinations: [.iPhone, .iPad, .mac],
             product: .staticFramework,
             bundleId: "com.statios.{{ name }}",
-            sources: ["Sources/**"]
+            sources: ["Sources/**"],
+            dependencies: [
+            ]
         )
+        
     ]
 )

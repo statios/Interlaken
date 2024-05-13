@@ -1,13 +1,13 @@
 import ProjectDescription
 
 let project = Project(
-    name: "{{ name }}",
+    name: "DesignSystem",
     targets: [
         .target(
-            name: "{{ name }}",
+            name: "DesignSystem",
             destinations: [.iPhone, .iPad, .mac],
             product: .staticFramework,
-            bundleId: "com.statios.{{ name }}",
+            bundleId: "com.statios.DesignSystem",
             sources: ["Sources/**"]
         )
     ]
