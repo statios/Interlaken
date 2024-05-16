@@ -1,32 +1,22 @@
 # Interaken
-
 This project is an example of a modular structure that allows multiple apps to be developed within the same codebase. It is designed to facilitate streamlined development processes in an organization, ensuring consistency and efficiency across various applications. This project is configured through Tuist and the workspace needs to be generated using Tuist.
 
-### **Modular Architecture**
-
+### Modular Architecture
 The modular architecture of this project, along with the roles and characteristics of each layer, is as follows:
 
-**Module**
+**Module**   
+This module, which can be referenced from any layer—foundation, feature, or app—defines interfaces and delegates actual implementation to dependent modules. It supports the creation of modules that integrate third-party libraries, includes foundational app development utilities, and does not directly implement app-specific parts.
 
-- Can be referenced from any layer: foundation, feature, or app.
-- This module defines interfaces and allows the actual implementation to be done in the dependent modules.
-- Can create modules that integrate third-party libraries.
-- Includes various modules that form the foundation of app development, such as utilities.
-- It does not directly implement parts that need to be applied differently for each app.
-
-**Foundation**
-
+**Foundation**   
 Referenced by the Feature layer and implements parts that are commonly applied across the app, allowing for reuse in multiple features.
 
-**Feature**
-
+**Feature**   
 A layer separated based on services that include specific flows within the app.
 
-**App**
-
+**App**   
 Integrates multiple features into a single app. When communication between features is necessary, it is implemented in this layer. It also handles the transitions and connections between different features.
 
-### Graph
+### Graph   
 <p align="center"><img src="graph.png"></img></p>
 
 ### Reference
