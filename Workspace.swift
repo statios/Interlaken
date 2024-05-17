@@ -9,5 +9,5 @@ import ProjectDescription
 
 let workspace = Workspace(
     name: "Interlaken",
-    projects: ["Projects/App/Brienz", "Projects/App/Holdrio"]
+    projects: ["Projects/App/**"]
 )
